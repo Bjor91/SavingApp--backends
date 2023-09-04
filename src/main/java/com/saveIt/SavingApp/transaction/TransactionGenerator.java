@@ -14,7 +14,7 @@ public class TransactionGenerator {
                 "Grocery Store", "Online Shopping", "Lunch Out"
         };
         String[] currencies = { "NOK" };
-        String[] dates = generateRandomAugustDates(100); // Generate 1000 random dates in August
+        String[] dates = generateRandomAugustDates(100); // Generate 100 random dates in August
 
         Random random = new Random();
 
