@@ -9,7 +9,7 @@ public class TransactionGenerator {
     public static List<Transaction> generateTransactions() {
         List<Transaction> transactions = new ArrayList<>();
 
-        String[] accountIds = { "acc123", "acc456", "acc789", "acc012" };
+        String[] accountIds = { "acc123", "acc789" };
         String[] descriptions = {
                 "Grocery Store", "Online Shopping", "Lunch Out"
         };
@@ -18,7 +18,7 @@ public class TransactionGenerator {
 
         Random random = new Random();
 
-        int transactionIndex = 9;
+        int transactionIndex = 14;
         for (int i = 0; i < dates.length; i++) {
             for (String accountId : accountIds) {
                 String txnId = "txn" + String.format("%03d", transactionIndex++);
