@@ -13,12 +13,10 @@ public class AccountConfig {
     @Bean
     CommandLineRunner AccountCommandLineRunner(AccountRepository repository) {
         return args -> {
-            Account acc123 = new Account("acc123", "********1234", "Checking", 15000.25, "NOK", "Alice");
-            Account acc456 = new Account("acc456", "********5678", "Savings", 25000.75, "NOK", "Bob");
-            Account acc789 = new Account("acc789", "********9876", "Checking", 2000.50, "NOK", "Charlie");
-            Account acc012 = new Account("acc012", "********2109", "Savings", 8000.00, "NOK", "David");
+            Account brukskonto = new Account("brukskonto", "********1234", "Checking", 15000.25, "NOK", "Bob");
+            Account sparekonto = new Account("sparekonto", "********5678", "Savings", 25000.75, "NOK", "Bob");
 
-            repository.saveAll(List.of(acc123, acc456, acc789, acc012));
+            repository.saveAll(List.of(brukskonto, sparekonto));
         };
     }
 }

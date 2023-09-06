@@ -42,4 +42,12 @@ public class TransactionService {
         }
         transactionRepository.deleteById(transactionId);
     }
+
+    public void loadTransactionsFromExcel() throws Exception {
+        List<Transaction> transactionsFromExcel = TransactionGenerator.generateTransactionsFromExcel();
+        transactionRepository.saveAll(transactionsFromExcel);
+    }
+
+    // ... Other methods ...
+
 }
