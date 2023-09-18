@@ -5,7 +5,9 @@ Design and implement a Spring Boot application that efficiently extracts persona
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your local machine:
-Java JDK: This project was developed with Java 17.0.7
+
+Java JDK: This project was developed with Java 17.0.7.
+
 This is a Maven project, so you'll need it for dependency management. If you haven't installed Maven, you can follow the instructions here.
 
 ## How to run
