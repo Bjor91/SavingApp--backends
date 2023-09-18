@@ -26,5 +26,5 @@ Please ensure that you run the Spring Boot backend locally when using the web ap
 Improvements and Reflections
 
 - Hosting Configuration: The current setup, where the back-end application runs locally while the database is hosted remotely, isn't the most efficient for wider public access. Ideally, both the back-end application and the database should be hosted remotely. This ensures that users can access the service seamlessly without needing to run any local instances.
-- File Processing: While the application currently processes Excel files, future iterations could support various file formats, enhancing the flexibility and user-friendliness of the service.
+- File Processing: While the application currently processes Excel files, future iterations could support various file formats, enhancing the flexibility and user-friendliness of the service. Ideally, the application should be retrieving the information directly from the bank.
 - Security Considerations: Given that we're dealing with personal expenses, it's vital to consider strengthening the security measures. This includes encrypting sensitive data, implementing rigorous authentication and authorization processes, and regular security audits.
